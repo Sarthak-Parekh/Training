@@ -1,12 +1,7 @@
-html { 
+body { 
     background: url('Background.jpeg') no-repeat center center fixed; 
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
-  * {
+   * {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
@@ -14,7 +9,7 @@ html {
  
 .form-group
 {
-         background-image  : linear-gradient(rgb(173, 173, 10), orange,brown);; 
+         background-image  : linear-gradient(rgb(173, 173, 10), orange,brown);
         width: 780px;
         height: 1280px;
         border-radius: 5%;
@@ -26,10 +21,7 @@ html {
         text-align: center;
     }
  
-  .switch{
-      font-size: 15px;
-      padding-bottom: -1px;
-  }
+ 
   
   input[type=text],input[type=email],input[type=password],input[type=date] {
     width: 30%;
