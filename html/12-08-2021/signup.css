@@ -1,0 +1,270 @@
+body { 
+    background: url('Background.jpeg') no-repeat center center fixed; 
+  }
+   * {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+ 
+.form-group
+{
+         background-image :radial-gradient(rgb(173, 173, 10), orange,brown);
+        width: 780px;
+        height: 980px;
+        border-radius: 5%;
+        position: relative;
+        margin: 6% auto;
+        /*background: #FFF;*/
+        padding: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+ 
+ 
+  
+  input[type=text],input[type=email],input[type=password],input[type=date],select,input[type=number] {
+    width: 30%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 5px;
+    border: none;
+  }
+  marquee
+  {
+      background : linear-gradient( #ff105f, #ffad06);
+  }
+  
+ 
+  .submit-btn {
+	width: 130px;
+  height: 40px;
+	font-size: 1.1em;
+	cursor: pointer;
+	display: block;
+	margin:  auto;
+	background: linear-gradient(to right, #ff105f, #ffad06);
+	border-radius: 20px;
+}
+.submit-btn:hover{
+                  Border-radius : 5px;
+                  transfrom: translateY( -10px );
+                  box-shadow: 0 7px 0 -2px #f85959,
+                  0 15px 0 -4px #39a2db,
+                  0 10px 10 px -3px #39a2db;
+}
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #091241;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3B3B3B;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-weight: normal;
+	color: #018AD1;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #0285CE;
+}
+
+
+
+/* Header */
+
+
+#header {
+	clear: both;
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Logo */
+
+#logo {
+	margin: 0px;
+	padding: 30px 0px;
+	color: #000000;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#logo h1 {
+	margin: 0px;
+	padding: 0px;
+	text-transform: lowercase;
+	font-size: 3.8em;
+	color: #FFFFFF;
+}
+
+#logo h1 span {
+	color: #FFFFFF;
+}
+
+#logo p {
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	color: #FFFFFF;
+}
+
+#logo p a {
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+
+/* Menu */
+
+#menu-wrapper {
+	overflow: hidden;
+	height: 60px;
+	background: url(images/menu-wrapper.jpg) repeat-x left top;
+}
+
+#menu {
+	width: 1000px;
+	height: 55px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+	border-right: 1px solid #FFFFFF;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	line-height: 55px;
+	padding: 0px 30px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #3B3B3B;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+
+
+/* Page */
+
+#page {
+	overflow: hidden;
+	width: 920px;
+	margin: 0px auto;
+	padding: 30px 40px;
+	background: url(images/page-bg.png) repeat-y left top;
+}
+
+#page-bgtop {
+	width: 1000px;
+	height: 25px;
+	margin: 0px auto;
+	background: url(images/page-bgtop.png) no-repeat left top;
+}
+
+#page-bgbtm {
+	width: 1000px;
+	height: 35px;
+	margin: 0px auto;
+	background: url(images/page-bgbtm.png) no-repeat left top;
+}
+
+/* Content */
+
+
+/* Footer */
+
+#footer {
+	overflow: hidden;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	font-family: 'Arvo', serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #A0A0A0;
+}
+
+#footer a {
+	color: #8A8A8A;
+}
+
+#banner {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+
