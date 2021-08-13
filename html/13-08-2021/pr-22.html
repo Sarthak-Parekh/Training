@@ -1,0 +1,35 @@
+   22.	Make a simple calculator using switch case.
+a.	1.Addition
+b.	2.Subtraction
+c.	3.Multiplication
+d.	4.Division
+<br>
+
+<html>
+<body>
+<script>
+    
+    
+      var sum=0,i,j;
+      var g = parseInt(prompt('Enter a first number: '));
+      var h = parseInt(prompt('Enter a second number: '));
+      var a = parseInt(prompt('Enter a  operator between 1 to 4: '));
+      switch(a){
+            case 1:
+          document.write ("Addition"+ g+h);
+            break;
+            case 2:
+          document.write ("Subtraction"+ g-h);
+            break;
+            case 3:
+          document.write ( "multiplication"+g*h);
+            break;
+            case 4:
+          document.write ("Division"+ g/h);
+            break;
+            default:document.write("please choice valid operator");
+      }
+
+    </script>
+</body>
+</html>
