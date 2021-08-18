@@ -1,78 +1,42 @@
-var form = document.getElementById("form");
-var username = document.getElementById("Name");
-var email= document.getElementById("Email");
-var password = document.getElementById("Password");
-var password2 = document.getElementById("Password2");
+function valid()
+{
+    var uname = document.getElementById("uname");
+    var password = document.getElementById("pass");
+    var email = document.getElementById("email");
+    let confirm = document.getElementById("confirm");
 
-function validInput(input){
-    const inputGroup = input.parentElement;
-    inputGroup.className = "input-group success"
-    
-}
+    if(uname.value.trim()=="" )
+    {
+        uname.style.border = "solid 3px red";
+        document.getElementById("lbluser").style.visibility = "visible";
+        return false;
 
-function InValidInput(input , message){
-    const inputGroup = input.parentElement;
-    inputGroup.className = "input-group error"
-    const small = inputGroup.querySelector("small");
-    small.innerText = message
-}
+    }
+    else if(email.value.trim()=="")
+    {    email.style.border = "solid 3px red";
+        document.getElementById("lbl").style.visibility = "visible";
+        return false;
+    }
+    else if(password.value.trim()=="")
+    {   pass.style.border = "solid 3px red";
+        password.style.border = "solid 3px red";
+        document.getElementById("lbuser").style.visibility = "visible";
+        return false;
 
-
-function checkEmail(input) {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(re.test(input.value.trim())){
-            validInput(input);
-        }else {
-            InValidInput(input , "Email is invalid")
-        }
-}
-
-function checkInput(inputArr){
-    inputArr.forEach(input=> {
-      if(input.value.trim() === ""){
-          InValidInput(input , `${input.id} is required`)
-      }else{
-          validInput(input)
-      }
-    });
-}
-
-
-function usernameLen(input ,min ,max){
-    if (input.value.length < min){
-        InValidInput(input , `${input.id} must be atleast ${min} characters`);
-    }else if(input.value.length > max){
-        InValidInput(input ,  `${input.id} must be less than ${max} characters`);
-    }else{
-        validInput(input)
+    }
+    else if(password.value.trim().length<6)
+    {
+        alert("password to short");
+        return false;
+    }
+    else if(password.value != confirm.value)
+    {   confirm.style.border = "solid 3px red";
+        document.getElementById("lbuse").style.visibility = "visible";
+        return false;
+    }
+   
+    else
+    {
+        return true;
     }
 }
-
-
-function passwordLen(input ,min ,max){
-    if (input.value.length < min){
-        InValidInput(input , `${input.id} must be atleast ${min} characters`);
-    }else if(input.value.length > max){
-        InValidInput(input ,  `${input.id} must be less than ${max} characters`);
-    }else{
-        validInput(input)
-    }
-}
-
-function passwordValidation(input1 , input2){
-    if(input1.value != input2.value){
-       InValidInput(input2 , "Passwords dont match")
-    }
-}
-
-
-form.addEventListener("submit" , function(e){
-    e.preventDefault();
- 
-   checkInput([username , email , password ,password2]);
-   usernameLen(username , 3, 20);
-   passwordLen(password , 6 , 20);
-   checkEmail(email);
-   passwordValidation(password , password2)
-    
-});

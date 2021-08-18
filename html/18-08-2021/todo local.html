@@ -1,0 +1,41 @@
+/*todo app localStorage*/
+<html>
+<head>
+    <script>
+        let a=0;
+        var array = Array();
+        function call()
+        {    
+             var item = document.getElementById("box");
+            var list_item =  document.getElementById("list_item");
+           if(item.value !="")
+            {
+                var make_li = document.createElement("LI");
+                make_li.appendChild(document.createTextNode(item.value));
+                list_item.appendChild(make_li);
+            }
+            else{
+                alert("please enter the task")
+            }
+
+           array[a] = document.getElementById("box").value;
+            if(array[a]!="")
+            {
+                localStorage.setItem(a,JSON.stringify(array[a]));
+                a++;
+                document.getElementById("box").value="";
+
+            }
+
+
+
+    }
+    </script>
+</head>
+    <body>
+        <input type="text" id="box">
+        <button onclick="call()" >submit</button>
+        <br>
+        <ul id="list_item"></ul>
+    </body>
+</html>

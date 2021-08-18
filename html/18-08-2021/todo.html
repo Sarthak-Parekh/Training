@@ -1,0 +1,30 @@
+/*todo app*/
+<html>
+<head>
+    <script>
+        function call()
+        {   
+             var item = document.getElementById("box");
+            var list_item =  document.getElementById("list_item");
+           if(item.value !="")
+            {
+                var make_li = document.createElement("LI");
+                make_li.appendChild(document.createTextNode(item.value));
+                console.log(make_li);
+               list_item.appendChild(make_li);
+               /*console.log(list_item);*/
+            }
+            
+            else{
+                alert("please enter the task")
+            }
+    }
+    </script>
+</head>
+    <body>
+        <input type="text" id="box">
+        <button onclick="call()" >submit</button>
+        <br>
+        <ul id="list_item"></ul>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+/*counter app*/
+<html>
+<head>
+    <script>
+       
+       function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value);
+    value++;
+    document.getElementById('number').value = value;
+}
+    </script>
+</head>
+<body>
+    
+        <input type="text" id="number" value="0"/>
+        <input type="button" onclick="incrementValue()"  value="click"/>
+     
+</body>
+</html>
+
