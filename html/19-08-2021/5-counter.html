@@ -1,0 +1,27 @@
+<html>
+    <body>
+             
+              <input type="text" id="d">
+              <button onclick = "clock()">Start</button>
+              <button onclick = "clearInterval(myTimer)">Stop</button>
+    </body>
+    <script>
+        var myTimer;
+        var c=20;
+        function clock()
+        {
+            myTimer = setInterval(myClock,1000);
+            
+            function myClock()
+            {
+                document.getElementById("d").value = c--;
+                
+                if(c==0)
+                {
+                    clearInterval(myTimer);   
+                    alert("reached zero");
+                }
+            }
+        }
+    </script>
+</html>

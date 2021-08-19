@@ -1,0 +1,14 @@
+<html>
+<body>
+<div id="my">
+    <p id="p1">Hello</p>
+</div>
+</body>
+<script>
+      document.getElementById("my").addEventListener("click",function(){
+          alert("this is div");
+      });
+      document.getElementById("p1").addEventListener("click",function(){
+      event.stopPropagation();alert("this is p");});
+</script>
+</html>

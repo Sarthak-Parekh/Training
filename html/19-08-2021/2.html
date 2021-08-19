@@ -1,0 +1,37 @@
+<html>
+    <body>
+        
+        <p id = "myid1">This is my login</p>
+        <p id = "myid2">This is website</p>
+        <p id = "myid">THis is my website</p><br>
+
+        <marquee onmouseover="this.stop()" onmouseout="this.start()">Website</marquee>
+
+    </body>
+    <script>
+     
+      document.getElementById("myid1").addEventListener('dblclick' , fun1);
+      function fun1()
+      {
+          var text = document.getElementById("myid1");
+          text.style.color = "red";
+      }
+      document.getElementById("myid2").addEventListener('mouseover', fun2);
+      function fun2()
+      {
+          var text = document.getElementById("myid2");
+          text.style.fontStyle = "italic";
+      }
+      document.getElementById("myid").addEventListener('click' , fun);
+      function fun()
+      {
+          var text = document.getElementById("myid");
+          text.style.background = "green";
+      }
+
+
+
+
+    </script>
+
+</html>

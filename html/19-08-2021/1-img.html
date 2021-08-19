@@ -1,0 +1,32 @@
+<html>
+<body>
+    <img id="m" src="4.jpg">
+</body>
+<script>
+
+document.getElementById("m").addEventListener("click",fun);
+function fun()
+{
+    document.getElementById("m").src = "2.jpg";
+}
+document.getElementById("m").addEventListener("mouseover",fun1);
+function fun1()
+{
+    document.getElementById("m").src = "7.jpg";
+}
+document.getElementById("m").addEventListener("mouseout",fun2);
+function fun2()
+{
+    document.getElementById("m").src = "8.jpg";
+}
+document.getElementById("m").addEventListener("mouseup",fun3);
+function fun3()
+{
+    document.getElementById("m").src = "8.jpg";
+}
+
+
+</script>
+
+
+</html>

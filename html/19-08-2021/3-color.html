@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <div id="id1">
+        <input type="color" >
+       <hr> <br><br></div> <p id="demo">Hello THis is my page </p>
+       </body>
+<script>
+
+document.getElementById("id1").addEventListener("input",myfunction1);
+var text = document.getElementById("demo");  
+var tet = document.getElementById("id1");
+function myfunction1()
+{
+    var text = document.getElementById("demo");  
+    if(text){
+        text.style.color = event.target.value;
+        tet.style.backgroundColor = event.target.value;
+    }
+}
+
+</script>
+</html>
