@@ -1,0 +1,132 @@
+
+<html>
+<head>
+	
+	<title> Validation</title>
+	<link rel="stylesheet" href="form.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <h2>Registration</h2>
+        <form action="" name="registration">
+      
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="first name"/>
+      
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="last name"/>
+          <label for="DOB">DOB</label>
+          <input name ="dob" id="dob" type="date" required/>
+          <label for="Age">Age</label>
+          <input name="age" id="age" type="number"/>
+          <label for="Phone Number">Phone Number</label>
+          <input name="phone" id="phone" type="number"/>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="shri@.com"/>
+          <label for="File">File</label>
+          <input type="file" name="file" id="file" required/>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+         
+          
+          <p><label>Confirm Password: <input type="text" name="password" id="password_confirm" data-rule-password="true" data-rule-equalTo="#password" required></label></p>
+          <button type="submit">Register</button>
+      
+        </form>
+      </div>
+	<script >
+      $(function() {
+  
+  $("form[name='registration']").validate({
+      rules: {
+  
+      firstname: "required",
+      lastname: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+       phone:{
+            required :true,
+            digits:true,   
+            minlength:10,
+            maxlength:10,       
+          
+          },
+          age:{
+            required: true,
+            min:18,
+            max:80,
+          },
+          DOB:{
+           required:true,
+           date:true,
+          },
+
+
+      file:{
+                required: true,   
+                accept: "jpg|jpeg|png", 
+            }  
+    },
+
+
+    password: {
+            
+            minlength: 5
+        },
+        password_confirm: {
+            
+            minlength: 5,
+            equalTo: "#password"
+        },
+    messages: {
+      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      age:{
+         required:"please enter your age",
+         min:"should be =>18+",
+         max:"should ne <=80",
+      },
+      DOB:{ 
+        
+       required: "please enter your Date of birth",
+            date:"your date is not valid",
+
+      },
+      phone:{
+        required:"Please enter your number",
+        min:"your contact NUmber must be 10",
+        max:"your contact Number must be 10",
+
+      },
+      file:{
+               required: 'Please select the image!',  
+               accept:"only image file"
+            } ,
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+
+
+
+
+   </script>
+</body>
+</html>

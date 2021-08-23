@@ -1,0 +1,44 @@
+<html>
+ <head>
+     <link rel="stylesheet" href="light.css"/>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+ </head>   
+<body>
+
+<div id="image-viewer">
+    
+      <span class="close">&times;</span>
+    
+      <img class="modal-content" id="full-image">
+    
+    </div>
+
+    <div class="images">
+        
+          <img src="1.jpg" alt="My Image" width="400" height="300" />
+          <img src="2.jpg" alt="My Image" width="400" height="300" />
+        
+        </div>
+
+</body>
+
+
+<script>
+    $(".images img").click(function(){
+
+  $("#full-image").attr("src", $(this).attr("src"));
+
+  $('#image-viewer').show();
+
+});
+
+ 
+
+$("#image-viewer .close").click(function(){
+
+  $('#image-viewer').hide();
+
+});
+
+</script>
+    </html>
