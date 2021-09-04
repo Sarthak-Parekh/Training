@@ -1,0 +1,24 @@
+<html>
+    <head>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#ld").click(function(){
+            $.ajax({
+                url:"file1.txt",
+                success:function(result,status,xhr){
+                    $("#md").html(result)
+                },
+                error:function(xhr,status,error){
+                    $("#md").html("result:"+status + " "+error +" " + xhr.status +" " + xhr.statusText)
+                }
+            });
+        });
+    });
+</script>
+    </head>
+<body>
+<button id="ld">submit</button>
+<div id="md"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+<title>table</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script>
+$(document).ready(function(){
+
+
+    $("#btn").click(function(){
+    
+      $.ajax({
+            
+            success: function(result,status,xhr){
+
+                $.getScript("table.js");
+                
+            }
+        });
+
+    });
+  });
+</script>
+
+    </head>
+    <body>
+        
+        <input type="text" id="id1" class="class1"/>
+        <button id="btn">table</button>
+    
+    </body>
+</html>

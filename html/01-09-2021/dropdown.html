@@ -1,0 +1,54 @@
+<html>
+ <head>
+  <title>dropdown</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
+
+   <script>
+        $(document).ready(function () {
+            load_data('state');
+            function load_data(id, parent_id) {
+                var js = '';
+                $.getJSON('dropbox.json', function (data) {
+                    js  += '<option value="">Select ' + id + '</option>';
+                    $.each(data, function (key, value) {
+                        if (id == 'state') {
+                            if (value.parent_id == '0') {
+                                js += '<option value="' + value.id + '">' + value.name + '</option>';
+                            }
+                        }
+                        else {
+                            if (value.parent_id == parent_id) {
+                                js += '<option value="' + value.id + '">' + value.name + '</option>';
+                            }
+                        }
+                    });
+                    $('#' + id).html(js);
+                });
+            }
+            $(document).on('change', '#state', function () {
+                var state_id = $(this).val();
+                if (state_id != '') {
+                    load_data('city', state_id);
+                }
+                else {
+                    $('#city').html('<option value="">Select City</option>');
+                }
+            });
+        });
+    </script>
+ </head>
+ <body>
+  <br /><br />
+  
+  <div style = "width: 300px;">
+   <select name="state" id="state" class="form-control input-lg">
+    <option value="">Select state</option>
+   </select>
+   <br /><br/>
+   <select name="city" id="city" class="form-control input-lg">
+    <option value="">Select city</option>
+   </select>
+</div>
+ </body>
+</html>

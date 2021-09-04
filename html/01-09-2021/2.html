@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+ 
+ <script>
+     $(document).ready(function(){
+    $("#lf").click(function(){
+        $.ajax({
+            url:"img.html",
+            success: function(result,status,xhr){
+                $("#td").html(result);
+            }
+        });
+    });
+});
+ </script>
+ <body>
+     <button id="lf">submit</button>
+     <div id="td"></div>
+ </body>
+ 
+ 
+    </head>
+</html>

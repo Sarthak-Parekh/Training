@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>start</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+
+    
+  $(document).ajaxStart(function(){
+    $(this).html("<img src='loading.gif'>");
+  });
+  $("button").click(function(){
+    $("div").load("file.txt");
+  });
+});
+</script>
+</head>
+<body>
+
+<div><h2>Ajax text</h2></div>
+
+<button>Change Content</button>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+[
+{
+   "firstname":"daya",
+   "lastname":"vyas",
+   "Age":"40"
+   
+},
+{
+    "firstname":"Acp",
+    "lastname":"praduman",
+    "Age":"50"
+    
+ },
+
+ {
+    "firstname":"Alex",
+    "lastname":"jones",
+    "Age":"25"
+    
+ },
+ {
+    "firstname":"iron",
+    "lastname":"man",
+    "Age":"45"
+    
+ },
+ {
+    "firstname":"khabib",
+    "lastname":"hussain",
+    "Age":"33"
+    
+ }
+
+]

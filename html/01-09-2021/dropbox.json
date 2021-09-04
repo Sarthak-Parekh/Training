@@ -1,0 +1,65 @@
+[
+    {
+     "id":"1",
+     "name":"Gujarat",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"2",
+     "name":"Maharastra",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"3",
+     "name":"Karnataka",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"4",
+     "name":"Ahmedabad",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"5",
+     "name":"Rajkot",
+     "parent_id":"1"
+    }, 
+    {
+        "id":"6",
+        "name":"Porbandar",
+        "parent_id":"1"
+       }, 
+       {
+        "id":"7",
+        "name":"Pune",
+        "parent_id":"2"
+       }, 
+       {
+        "id":"8",
+        "name":"Nagpur",
+        "parent_id":"2"
+       }, 
+    {
+        "id":"9",
+        "name":"mumbai",
+        "parent_id":"2"
+    },
+    {
+        "id":"10",
+        "name":"Banglore",
+        "parent_id" : "3"
+    },
+    {
+        "id":"11",
+        "name":"mysore",
+        "parent_id" : "3"
+    },
+    {
+        "id":"12",
+        "name":"Mangalore",
+        "parent_id" : "3"
+    }
+
+]
+
+
