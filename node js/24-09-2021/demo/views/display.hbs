@@ -1,0 +1,28 @@
+<h1>Data</h1>
+
+{{mydata.length}} record add
+<table border="1px">
+<tr>
+  
+    <th>Name</th>
+    <th>age</th>
+    <th>mobile</th>
+    <th>action</th>
+    </tr>
+    {{#each mydata}}
+
+
+<tr>
+       
+    <td>{{user_name}}</td>
+    <td>{{user_age}}</td>
+    <td>{{user_mobile}}</td>
+    <td>
+        <a href="/edit/{{_id}}">Edit</a>
+        <a href="/delete/{{_id}}">Delete</a>
+    </td>
+</tr>
+   
+
+  {{/each}}
+ </table>

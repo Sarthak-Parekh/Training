@@ -1,0 +1,28 @@
+<h1>area</h1>
+{{mydata.length}} Records Found
+<table border='1'>
+    <tr>
+        <th>State Name</th>
+        <th>City name</th>
+        <th>area</th>
+         
+        
+    </tr>
+
+{{#each mydata}}
+    <tr>
+        <td>{{_state.State}}</td>
+    <td>{{_city.Product}}</td>
+    <td>{{Area}}</td>
+    
+     
+    <td>
+        <a href="/area/edit/{{_id}}">Edit</a> |
+        <a href="/area/delete/{{_id}}">Delete</a>
+
+    </td>
+    </tr>
+{{/each}}
+
+
+</table>

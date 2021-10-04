@@ -1,0 +1,14 @@
+<form method="post" enctype="multipart/form-data">
+   
+   State Name:
+       <select name="_state">
+                   {{#each mycate}}
+
+                            <option value='{{_id}}'>{{State}}</option>
+                           
+                           {{/each}}
+                        </select>
+                         City Name: <input type="text" name="txt1"/>
+    <button>ADD</button>
+   
+</form> <a href="/city/display"><button>Display</button></a>

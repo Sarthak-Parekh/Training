@@ -1,4 +1,6 @@
-
+img{
+  border-radius: 10%;
+}
 p{
     font-size:150%;
 }
@@ -211,6 +213,18 @@ p{
   margin: 0px auto;
   }
   
+
+  .soical-icons {
+    margin: 30px auto;
+    text-align: center;
+  }
+  .soical-icons .fa {
+    font-size: 40px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    color: blue;
+    margin: 0 12px;
+    cursor: pointer;
+  } 
   
   
   

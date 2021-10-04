@@ -1,0 +1,26 @@
+<h1>Student data display</h1>
+{{studentdata.length}} record found
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+       
+    </tr>
+
+    {{#each studentdata}}
+ <tr>
+       <td>{{user_name}}</td>
+        <td>{{user_email}}</td>
+        
+
+<td>
+    <a href="/student/edit/{{_id}}">Edit</a>
+    <a href="/student/delete/{{_id}}">Delete</a>
+</td>
+
+
+     </tr>
+     
+
+    {{/each}}
+</table>

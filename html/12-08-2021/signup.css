@@ -32,10 +32,7 @@ body {
     border-radius: 5px;
     border: none;
   }
-  marquee
-  {
-      background : linear-gradient( #ff105f, #ffad06);
-  }
+ 
   
  
   .submit-btn {
@@ -50,10 +47,10 @@ body {
 }
 .submit-btn:hover{
                   Border-radius : 5px;
-                  transfrom: translateY( -10px );
+                  transform: translateY( -10px );
                   box-shadow: 0 7px 0 -2px #f85959,
-                  0 15px 0 -4px #39a2db,
-                  0 10px 10 px -3px #39a2db;
+                  0 15px 0 -4px #b8db39,
+                  0 10px 10 px -3px #b8db39
 }
 
 

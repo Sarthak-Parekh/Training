@@ -1,0 +1,14 @@
+<form method="post" enctype="multipart/form-data">
+    Product Name: <input type="text" name="txt1"/>
+    product Image :<input type="file" name= "file1"/>
+    Product Price :<input type="text" name="txt2"/>
+       <select name="_category">
+                   {{#each mycate}}
+
+                            <option value='{{_id}}'>{{category}}</option>
+                           
+                           {{/each}}
+                        </select>
+    <button>ADD</button>
+   
+</form> 

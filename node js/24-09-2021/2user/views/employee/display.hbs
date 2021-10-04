@@ -1,0 +1,26 @@
+<h1>Employee display</h1>
+{{employeedata.length}} record found
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+       
+    </tr>
+
+    {{#each employeedata}}
+ <tr>
+       <td>{{user_name}}</td>
+        <td>{{user_email}}</td>
+      
+
+<td>
+    <a href="/employee/edit/{{_id}}">Edit</a>
+    <a href="/employee/delete/{{_id}}">Delete</a>
+</td>
+
+
+     </tr>
+     
+
+    {{/each}}
+</table>

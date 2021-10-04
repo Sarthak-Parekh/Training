@@ -11,7 +11,7 @@ body {
 {
          background-image  : linear-gradient(rgb(173, 173, 10), orange,brown);
         width: 780px;
-        height: 1280px;
+        height: 1480px;
         border-radius: 5%;
         position: relative;
         margin: 6% auto;
@@ -23,7 +23,7 @@ body {
  
  
   
-  input[type=text],input[type=email],input[type=password],input[type=date] {
+  input[type=text],input[type=email],input[type=password],input[type=date],select {
     width: 30%;
     padding: 14px 20px;
     margin: 8px 0;

@@ -1,0 +1,24 @@
+<h1>User data display</h1>
+{{userdata.length}} record found
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+
+    {{#each userdata}}
+ <tr>
+       <td>{{user_name}}</td>
+        <td>{{user_email}}</td>
+
+<td>
+    <a href="/users/edit/{{_id}}">Edit</a>
+    <a href="/users/delete/{{_id}}">Delete</a>
+</td>
+
+
+     </tr>
+     
+
+    {{/each}}
+</table>

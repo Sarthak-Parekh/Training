@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+   <script src=" https://www.cdnpkg.com/jquery-toast-plugin"></script>
+    <script>
+    
+    function fun(){
+    $.toast({
+    heading: 'Information',
+    text: 'Loaders are enabled by default. Use `loader`, `loaderBg` to change the default behavior',
+    icon: 'info',
+    loader: true,        // Change it to false to disable loader
+    loaderBg: '#9EC600'  // To change the background
+})}
+</script>
+</head>
+
+
+<body>
+
+
+    <button onclick="fun()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<h1>Data</h1>
+
+{{mydata.length}} record add
+<table border="1px">
+<tr>
+  
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>joindate</th>
+    <th>Photo</th>
+    <th>hobby</th>
+    </tr>
+    {{#each mydata}}
+
+
+<tr>
+       
+    <td>{{user_name}}</td>
+    <td>{{user_gender}}</td>
+    <td>{{user_email}}</td>
+    <td>{{user_password}}</td>
+    <td>{{user_joindate}}</td>
+    <td><img src="images/{{user_photo}}" width="200" height="100"></td>
+    <td>{{user_hobby}}</td>
+
+
+
+
+    <td>
+        <a href="/edit/{{_id}}">Edit</a>
+        <a href="/delete/{{_id}}">Delete</a>
+    </td>
+</tr>
+   
+
+  {{/each}}
+ </table>

@@ -8,22 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <form id="form" class="form">
+        <form id="form"  onsubmit= " return valid()" class="form">
             <h2>Registration</h2>
             <div class="input-group">
                 <label for="Name">Name</label>
                 <input type="text" placeholder="Enter your Name" id="uname">
-                <span id = "lbluser" style="color:red; visibility:hidden">invalid</span> 
+                <span id = "lbluser" style="color:red; visibility:hidden">Please enter the Name</span> 
             </div>
             <div class="input-group">
                 <label for="Email">Email ID</label>
                 <input type="text" placeholder="Enter your Email ID" id="email">
-                <span id = "lbl" style="color:red; visibility:hidden">Please enter email</span> 
+                <span id = "lbl" style="color:red; visibility:hidden">Please enter email</span>
+                <span id = "log" style="color:red; visibility:hidden">Please enter valid email</span>  
             </div>
             <div class="input-group">
                 <label for="Password">Password</label>
                 <input  placeholder="Enter Password" id="pass">
-                <lable id = "lbuser" style="color:blue; visibility:hidden">invalid</lable> 
+                <lable id = "lbuser" style="color:red; visibility:hidden">Enter the password</lable> 
             </div>
             <div class="input-group">
                 <label for="Password2">Confirm Password</label>

@@ -1,0 +1,12 @@
+<form method="post" enctype="multipart/form-data">
+    Name:<input type="text" value={{mydata.user_name}} name="txt1"><br/><br/>
+
+    gender:<input type="radio" value="{{mydata.user_gender}}" name="txt2"> Male<input type="radio" value="{{mydata.user_gender}}" name="txt2"> Female<br/><br/>
+    email:<input type="text" value="{{mydata.user_email}}" name="txt3"><br/><br/>
+    password:<input type="text"value="{{mydata.user_password}}" name="txt4"><br/><br/>
+    joindate<input type="date" value="{{mydata.user_joindate}}" name="txt5"><br/><br/>
+    photo<input type="file" value="{{mydata.user_photo}}" name="file1"><br/><br/>
+    hobby:<input type="checkbox" value="{{mydata.user_hobby}}"name="txt7">chess<br/><br/>
+    <input type="checkbox" value="{{mydata.user_hobby}}"name="txt7">cricket<br/><br/>
+    <button>Submit</button>
+</form>

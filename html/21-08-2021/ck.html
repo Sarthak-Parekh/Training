@@ -9,7 +9,12 @@
 <body>
   <textarea cols="80" id="editor1" name="editor1" rows="15" style="height: 400;" data-sample-short></textarea>
   <script>
-    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor1',{
+      height:100,
+      width:550,
+      basefloatZindex:10005
+    });
+
   </script>
 </body>
 

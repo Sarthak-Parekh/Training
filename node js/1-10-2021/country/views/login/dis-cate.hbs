@@ -1,0 +1,22 @@
+<h1>State</h1>
+{{mydata.length}} Records Found
+<table border='1'>
+    <tr>
+        <th>State Name</th>
+        
+    </tr>
+
+{{#each mydata}}
+    <tr>
+    <td>{{State}}</td>
+  
+    <td>
+        <a href="/state/edit/{{_id}}">Edit</a> |
+        <a href="/state/delete/{{_id}}">Delete</a>
+
+    </td>
+    </tr>
+{{/each}}
+
+
+</table>
